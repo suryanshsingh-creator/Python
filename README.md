@@ -47,6 +47,10 @@ elif operation == '*':
 
 elif operation == '/':
     #if it's division, we divide the numbers.
+    if num2 == 0:
+        # Check for division by zero, which is a big math error!
+        print("ERROR: Cannot divide by zero! Please try again with a different number.")
+    else:
     result = num1/num2
     print("dividing {num1} by {num2}...")
     print(f"The result is: {result}")
